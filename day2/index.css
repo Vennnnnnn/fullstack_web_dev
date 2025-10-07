@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-columns: 30% 40% auto;
+  background-color: dodgerblue;
+  padding: 10px;
+}
+.container2 {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: red;
+  padding: 10px;
+}
+.container > div,
+.container2 > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  width: 450px;
+  margin: 10px;
+}
