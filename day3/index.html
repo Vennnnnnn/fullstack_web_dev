@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Javascript</title>
+  </head>
+  <body>
+    <!-- <button onclick="console.log(30)">Click me</button> -->
+    <!-- <script>
+        console.log(50);
+    </script> -->
+
+    <h1>This is a heading</h1>
+    <h2 id="myHeading">Heading 2 sample</h2>
+    <!-- <script src="function.js"></script> -->
+    <script>
+      let heading = document.getElementsByTagName("h1");
+      console.log(heading[0]);
+      heading[0].innerHTML = "This is a manipulated heading";
+      // use jquery to write shorter and better
+
+      let head2 = document.getElementById("myHeading");
+      head2.style.color = "yellow";
+      head2.style.backgroundColor = "darkblue";
+      head2.style.padding = "10px";
+      head2.style.textAlign = "center";
+
+      head2.innerHTML = "This is a manipulated heading 2";
+
+      console.log(head2);
+
+      //ajax is used to use API to obtain data, decide what you wanna do with the data, and the data will return in json format
+      //fetch is used to fetch the data from the API
+    </script>
+  </body>
+</html>
