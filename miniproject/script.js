@@ -20,7 +20,10 @@ function calculateTip() {
   result.textContent = `Tip: RM${tip.toFixed(2)} | Total: RM${total.toFixed(2)}`;
 }
 
-billInput.addEventListener("input", calculateTip);
-tipInput.addEventListener("input", calculateTip);
+// billInput.addEventListener("input", calculateTip);
+// tipInput.addEventListener("input", calculateTip);
+// button.addEventListener("click", calculateTip);
 
-button.addEventListener("click", calculateTip);
+billInput.onkeyup = calculateTip;
+tipInput.onkeyup = calculateTip;
+button.onclick = calculateTip;
