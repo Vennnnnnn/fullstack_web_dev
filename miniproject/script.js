@@ -24,6 +24,6 @@ function calculateTip() {
 // tipInput.addEventListener("input", calculateTip);
 // button.addEventListener("click", calculateTip);
 
-billInput.onkeyup = calculateTip;
-tipInput.onkeyup = calculateTip;
+billInput.oninput = calculateTip;
+tipInput.onchange = calculateTip;
 button.onclick = calculateTip;
